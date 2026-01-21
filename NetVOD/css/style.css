@@ -1,0 +1,670 @@
+/* === GLOBAL === */
+body {
+    background: radial-gradient(circle at top, #0f1624, #090d17);
+    color: #e0e0e0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.btn-favori {
+    margin-top: 15px;
+}
+/* === Catalogue : barre de recherche et tri === */
+.catalogue-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.catalogue-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background-color: #0f1625;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(90, 150, 255, 0.25);
+}
+
+.catalogue-form input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #141b2f;
+    color: #e0e0e0;
+    width: 220px;
+}
+
+.catalogue-form select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #141b2f;
+    color: #e0e0e0;
+}
+
+.catalogue-form button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4d7aff;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.catalogue-form button:hover {
+    background-color: #335ccc;
+    transform: scale(1.05);
+}
+/* === Harmonisation catalogue et filtres === */
+.catalogue-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background-color: #0f1625;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(90, 150, 255, 0.25);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.catalogue-form label {
+    color: #c9d1e8;
+    font-weight: 500;
+}
+
+.catalogue-form select,
+.catalogue-form input[type="text"] {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #141b2f;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+.catalogue-form select:focus,
+.catalogue-form input[type="text"]:focus {
+    outline: none;
+    border-color: #7aa9ff;
+    box-shadow: 0 0 10px rgba(122, 169, 255, 0.3);
+}
+
+.catalogue-form button,
+.btn-apply {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4d7aff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.catalogue-form button:hover,
+.btn-apply:hover {
+    background-color: #335ccc;
+    transform: scale(1.05);
+}
+
+/* Lien "Filtrer par genre/public" */
+.btn-filter {
+    color: #9c84ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.btn-filter:hover {
+    color: #b7a6ff;
+    transform: scale(1.05);
+}
+
+/* === Liens (violet clair, lisible sur fond sombre) === */
+a:link {
+    color: #c9a3ff;
+}
+
+/* === Réduction du bloc filtre === */
+form.catalogue-form {
+    width: fit-content;
+    padding: 15px 25px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(90, 150, 255, 0.25);
+}
+
+/* Centrage du bloc "Filtrer le catalogue" */
+h2 + form.catalogue-form {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.search-form, .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search-form input[type="text"], .search-bar input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #0d111d;
+    color: #e0e0e0;
+}
+
+.search-form button, .search-bar button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #7aa9ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-form button:hover, .search-bar button:hover {
+    background: #5c87e0;
+}
+
+/* Centrage du titre */
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+}
+
+
+/* === HEADER === */
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 30px 0;
+    color: #7aa9ff;
+    text-shadow: 0 0 20px rgba(122, 169, 255, 0.8);
+    letter-spacing: 3px;
+}
+
+/* === NAVBAR === */
+nav {
+    text-align: center;
+    background: #0b1020;
+    padding: 12px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+    color: #c9a3ff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #7aa9ff;
+}
+
+/* === TITRES === */
+h2, h3 {
+    text-align: center;
+    color: #7aa9ff;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+/* === GRILLES (catalogue / épisodes) === */
+.catalogue-grid,
+.episodes-grid,
+.series-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* === CARTES SÉRIE === */
+.serie-card {
+    background: linear-gradient(145deg, #141a2a, #0d111d);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 240px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.serie-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(122, 169, 255, 0.3);
+}
+
+.serie-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 2px solid #1a2338;
+}
+
+.etoile a {
+    display: inline-block;
+    font-size: 2rem;
+    color: gold;
+    text-decoration: none;
+    transition: transform 0.25s ease-in-out;
+
+}
+
+.etoile a:hover {
+    transition: transform 0.25s ease-in-out;
+    transform: scale(1.4);
+    color: #ffd700;
+}
+
+.serie-card a {
+    color: #e0e0e0;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.serie-card a:hover {
+    color: #7aa9ff;
+}
+
+/* === DÉTAILS D’UNE SÉRIE === */
+.serie-details {
+    background: linear-gradient(145deg, #141a2a, #0d111d);
+    border-radius: 15px;
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 35px;
+    box-shadow: 0 0 25px rgba(122, 169, 255, 0.2);
+    text-align: center;
+}
+
+.serie-details p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* === BOUTON AJOUTER AUX FAVORIS === */
+.serie-details .btn-favoris {
+    display: inline-block;
+    margin-top: 25px;
+    background: linear-gradient(90deg, #2a2a72, #6a5acd);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(106, 90, 205, 0.5);
+    transition: all 0.3s ease;
+}
+
+.serie-details .btn-favoris:hover {
+    background: linear-gradient(90deg, #6a5acd, #8a7aff);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(138, 122, 255, 0.7);
+}
+
+/* === DÉTAILS ÉPISODE === */
+.episode-detail {
+    background: linear-gradient(145deg, #141a2a, #0d111d);
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(122, 169, 255, 0.2);
+    text-align: center;
+}
+
+.episode-detail video {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(122, 169, 255, 0.3);
+    margin: 20px 0;
+}
+
+/* === BOUTON RETOUR === */
+.btn-retour {
+    display: inline-block;
+    background: #1e2a4a;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btn-retour:hover {
+    background: #2f3e68;
+}
+
+
+/* === dimention images === */
+
+.episode-img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.episodes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.episode-card {
+    flex: 0 0 auto;
+    width: 220px;
+    text-align: center;
+}
+
+
+/* === Compte Actif === */
+
+.compte-actif {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #1e2a4a;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.commentaire-detail {
+    background: linear-gradient(145deg, #141a2a, #0d111d);
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(122, 169, 255, 0.2);
+    text-align: left;
+}
+
+.commentaire-detail textarea {
+    width: 100%;
+    min-height: 150px;
+    max-height: 400px;
+    background: #0f1625;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.commentaire-detail textarea:focus {
+    border-color: #7aa9ff;
+    box-shadow: 0 0 10px rgba(122, 169, 255, 0.3);
+    outline: none;
+}
+
+.commentaires {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #332d2d;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.commentaires p {
+    background-color: #554f4f;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.commentaires p strong {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.commentaire-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #554f4f;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.commentaire-texte {
+    flex: 1;
+    color: #f0f0f0;
+}
+
+.commentaire-texte strong {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.commentaire-texte p {
+    background-color: #554f4f;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 0px solid #dbdfe4;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.boutonSupp {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    align-self: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.boutonSupp:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.boutonSupp:active {
+    background-color: #a93226;
+    transform: scale(0.97);
+}
+
+.note {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #332d2d;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 40%;
+
+}
+
+.note p {
+
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* === Avatars === */
+
+.avatar-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.avatar-choice {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.avatar-choice:hover {
+    transform: scale(1.1);
+}
+
+.avatar-choice.selected {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+
+.note p strong {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.favoris {
+    background: linear-gradient(145deg, #141a2a, #0d111d);
+    border-radius: 15px;
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 35px;
+    box-shadow: 0 0 25px rgba(122, 169, 255, 0.2);
+    text-align: center;
+}
+
+.favoris p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.profil-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.profil-item:hover img {
+    transform: scale(1.15);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+.profil-item span {
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.center-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.center-message h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.center-message a.btn-center {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #4d7aff, #335ccc);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.center-message a.btn-center:hover {
+    background: linear-gradient(90deg, #335ccc, #4d7aff);
+    transform: scale(1.05);
+}
+
+/* === Centrage message + boutons côte à côte === */
+.center-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+    color: #fff;
+}
+
+.center-message h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.center-message .btn-container {
+    display: flex;
+    gap: 20px; /* espace entre les boutons */
+}
+
+.center-message a.btn-center {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #4d7aff, #335ccc);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.center-message a.btn-center:hover {
+    background: linear-gradient(90deg, #335ccc, #4d7aff);
+    transform: scale(1.05);
+}
